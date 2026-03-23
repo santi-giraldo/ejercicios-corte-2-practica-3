@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 add_executable(bank Bank_Account.cpp)
 add_executable(auth Design_Authentication_Manager.cpp)
 add_executable(exam Design_Exam_Scores_Tracker.cpp)
-add_executable(square Crypto_Square/square_code.cpp)
+add_executable(square Crypto_Square/Crypto_Square.cpp)
 
 find_package(Threads REQUIRED)
 target_link_libraries(bank Threads::Threads)
