@@ -16,6 +16,8 @@ string normalize(const string& text) {
 
 int main() {
     string input;
+
+    cout << "Ingrese el texto: ";
     getline(cin, input);
 
     string s = normalize(input);
@@ -36,12 +38,16 @@ int main() {
         }
     }
 
+    cout << "Resultado: ";
+
     for (int j = 0; j < c; j++) {
         for (int i = 0; i < r; i++) {
             cout << grid[i][j];
         }
         cout << " ";
     }
+
+    cout << endl;
 
     return 0;
 }
